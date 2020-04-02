@@ -1,50 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/css/main.css">
-    <title>Chris Harvey Portfolio</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-				<h4>NAV</h4>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="dist/css/main.css" />
+		<title>Chris Harvey Portfolio</title>
+	</head>
+	<body>
+		<header>
+			<nav id="nav">
+				<div class="logo">
+					<h4>Chris Harvey</h4>
+				</div>
+				<ul class="nav-links">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+
+				<div class="burger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+			</nav>
+		</header>
+
+		<section id="home">
+			<div class="hero-content">
+				<div>
+					<h1>Chris <span id="primary">Harvey</span></h1>
+				</div>
+				<!--  h4 to be typewriter Effect -->
+				<h4>Student Web Developer, Designer, Programmer</h4>
+				<a href="#portfolio" class="btn">View My Work -></a>
 			</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+		</section>
 
-            <div class="burger">
-				<div class="line1"></div>
-				<div class="line2"></div>
-				<div class="line3"></div>
+		<section id="about">
+			<h1 class="title">About Me</h1>
+			<div class="about-content">
+				<div class="img">
+					<img src="img/me.jpg" alt="" id="chris" />
+				</div>
+				<div class="about-inner">
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quibusdam culpa reiciendis,
+						commodi assumenda id libero cumque sunt quia voluptatem. Sequi repellendus dolores, accusamus
+						magnam adipisci ipsum obcaecati molestiae quidem. In, facere officia. Vero laudantium animi sunt
+						repellat ipsum, commodi assumenda, nobis ducimus tempora quaerat nostrum repellendus similique
+						alias incidunt, cumque voluptatem quas iusto quidem a vel architecto porro recusandae. Itaque,
+						tempora quasi. Vero distinctio repellendus debitis provident nemo non! Nesciunt id obcaecati
+						veniam itaque doloribus nihil numquam, harum nostrum ipsum necessitatibus commodi, in doloremque
+						iusto laudantium atque excepturi nam.
+					</p>
+					<a href="#contact" class="btn1">Contact Me</a>
+				</div>
 			</div>
-        </nav>
+		</section>
 
-    </header>
+		<section id="my-skills">
+			<h1 class="skills">Skills</h1>
+			<div class="skills-inner">
+				<p>HTML</p>
+				<div class="container">
+					<div class="skill html">90%</div>
+				</div>
 
-    <section id="home">
-        <div class="hero-content">
-            <div>
-            <h1>Chris <span id="primary">Harvey</span></h1>
-            </div>
-        <!--  h4 to be typewriter Effect -->
-            <h4>Student Web Developer, Designer, Programmer
-            </h4>
-            <button class="btn">View My Work -></button>
-        </div>
-    </section>
+				<p>CSS</p>
+				<div class="container">
+					<div class="skill css">80%</div>
+				</div>
 
-    <section id="about">
-        
-    </section>
+				<p>JavaScript</p>
+				<div class="container">
+					<div class="skill js">65%</div>
+				</div>
 
+				<p>PHP</p>
+				<div class="container">
+					<div class="skill php">60%</div>
+				</div>
+			</div>
+		</section>
 
-    <script src="js/main.js"></script>
-</body>
+		<section id="portfolio">
+			<h1 class="gallery">Portfolio</h1>
+			<!-- <div class="container">
+                <div class=" box img1">
+					<div class="image-overlay"></div>
+					 <img src="/img/Screenshot 2020-03-20 at 15.36.19.png" alt="" id='img1' >
+				</div>
+                <div class="box" >
+					<div class="image-overlay"></div>
+					<img src="/img/project1.jpg" alt="" id="img1">
+				</div>
+                <div class="box">
+					<div class="image-overlay"></div>
+					<img src="/img/project2.jpg" alt="" id="img1">
+				</div>
+                <div class="box">
+					<div class="image-overlay"></div>
+					<img src="/img/project3.jpg" alt="" id="img1">
+				</div>
+			</div> -->
+			<div class="container">
+				<div class="content">
+					<div class="image-overlay"></div>
+					<img class="content-image" src="https://webdevtrick.com/wp-content/uploads/sunset-background.jpg" />
+					<div class="content-details fadeIn-bottom">
+						<h3 class="content-title">This is a title</h3>
+						<div class="social">
+							<a href=""><i class="fab fa-github"></i></a>
+							<a href=""><i class="fa fa-globe"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="image-overlay"></div>
+					<img class="content-image" src="https://webdevtrick.com/wp-content/uploads/sunset-background.jpg" />
+					<div class="content-details fadeIn-bottom">
+						<h3 class="content-title">This is a title</h3>
+						<div class="social">
+							<a href=""><i class="fab fa-github"></i></a>
+							<a href=""><i class="fa fa-globe"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="image-overlay"></div>
+					<img class="content-image" src="https://webdevtrick.com/wp-content/uploads/sunset-background.jpg" />
+					<div class="content-details fadeIn-bottom">
+						<h3 class="content-title">This is a title</h3>
+						<div class="social">
+							<a href=""><i class="fab fa-github"></i></a>
+							<a href=""><i class="fa fa-globe"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="image-overlay"></div>
+					<img class="content-image" src="https://webdevtrick.com/wp-content/uploads/sunset-background.jpg" />
+					<div class="content-details fadeIn-bottom">
+						<h3 class="content-title">This is a title</h3>
+						<div class="social">
+							<a href=""><i class="fab fa-github"></i></a>
+							<a href=""><i class="fa fa-globe"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<h1 class="contact-me">Contact Me</h1>
+
+			<div class="container">
+				<div class="contact-form" id="form">
+					<div class="contact-title">
+						<h2>Send Me A Message!</h2>
+					</div>
+					<div class="inputs">
+						<input type="text" placeholder="First Name" />
+						<input type="text" placeholder="Last Name" />
+						<input type="Email" placeholder="Email" />
+						<textarea type="text" placeholder="Message" id="message"></textarea>
+						<button class="btn">Submit</button>
+					</div>
+				</div>
+				<!-- <div class="info"></div> -->
+			</div>
+		</section>
+		<script src="https://kit.fontawesome.com/3fbf159bdb.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+		<script src="js/main.js"></script>
+	</body>
 </html>
