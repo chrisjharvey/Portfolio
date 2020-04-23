@@ -33,8 +33,12 @@
 					<h1>Chris <span id="primary">Harvey</span></h1>
 				</div>
 				<!--  h4 to be typewriter Effect -->
-				<h4>Student Web Developer, Designer, Programmer</h4>
-				<a href="#portfolio" class="btn">View My Work -></a>
+				<h4 class="line anim-typewriter">Student Web Developer, Designer, Programmer</h4>
+				<a href="#portfolio" class="btn-arrow">View My Work</a>
+			</div>
+			<div class="social">
+				<a href=""><i class="fab fa-github"></i></a>
+				<a href=""><i class="fab fa-linkedin"></i></a>
 			</div>
 		</section>
 
@@ -46,24 +50,56 @@
 				</div>
 				<div class="about-inner">
 					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quibusdam culpa reiciendis,
-						commodi assumenda id libero cumque sunt quia voluptatem. Sequi repellendus dolores, accusamus
-						magnam adipisci ipsum obcaecati molestiae quidem. In, facere officia. Vero laudantium animi sunt
-						repellat ipsum, commodi assumenda, nobis ducimus tempora quaerat nostrum repellendus similique
-						alias incidunt, cumque voluptatem quas iusto quidem a vel architecto porro recusandae. Itaque,
-						tempora quasi. Vero distinctio repellendus debitis provident nemo non! Nesciunt id obcaecati
-						veniam itaque doloribus nihil numquam, harum nostrum ipsum necessitatibus commodi, in doloremque
-						iusto laudantium atque excepturi nam.
+						My name is Christopher Harvey, I am from Manchester, UK, and currently living in London where I am attending SAE Institute, studying a BSc (Hons) Web Development. My journey in web development began through self-teaching where I used programmes such as Udemy, FreeCodeCamp and Codeacademy in order to assist my learning. Through this, I built my portfolio and was then accepted at SAE Institute. As a student, I now focus my time and effort into building a career in Full Stack Web Development. 
 					</p>
 					<a href="#contact" class="btn1">Contact Me</a>
 				</div>
 			</div>
 		</section>
 
-		<section id="my-skills">
+		 <section id="my-skills">
 			<h1 class="skills">Skills</h1>
-			<div class="skills-inner">
+			 <div class="skills-inner">
 				<p>HTML</p>
+				<div class="progress">
+					<div class="progress-bar">
+						<span>90%</span>
+					</div>
+				</div>
+			
+				<p>CSS</p>
+				<div class="progress">
+					<div class="progress-bar">
+						<span>90%</span>
+					</div>
+				</div>
+			
+				<p>JavaScript</p>
+				<div class="progress">
+					<div class="progress-bar">
+						<span>70%</span>
+					</div>
+				</div>
+			
+			<p>PHP</p>
+				<div class="progress">
+					<div class="progress-bar">
+						<span>20%</span>
+					</div>
+				</div>
+			
+			<p>MySQL</p>
+				<div class="progress">
+					<div class="progress-bar">
+						<span>30%</span>
+					</div>
+				</div>
+				</section>
+
+
+
+				
+				<!-- <p>HTML</p>
 				<div class="container">
 					<div class="skill html">90%</div>
 				</div>
@@ -83,32 +119,16 @@
 					<div class="skill php">60%</div>
 				</div>
 			</div>
-		</section>
+		</section> --> 
+
+
 
 		<section id="portfolio">
 			<h1 class="gallery">Portfolio</h1>
-			<!-- <div class="container">
-                <div class=" box img1">
-					<div class="image-overlay"></div>
-					 <img src="/img/Screenshot 2020-03-20 at 15.36.19.png" alt="" id='img1' >
-				</div>
-                <div class="box" >
-					<div class="image-overlay"></div>
-					<img src="/img/project1.jpg" alt="" id="img1">
-				</div>
-                <div class="box">
-					<div class="image-overlay"></div>
-					<img src="/img/project2.jpg" alt="" id="img1">
-				</div>
-                <div class="box">
-					<div class="image-overlay"></div>
-					<img src="/img/project3.jpg" alt="" id="img1">
-				</div>
-			</div> -->
 			<div class="container">
 				<div class="content">
 					<div class="image-overlay"></div>
-					<img class="content-image" src="/img/urmstonautocare.png" />
+					<img class="content-image" src="/img/UC.png" />
 					<div class="content-details fadeIn-bottom">
 						<h3 class="content-title">This is a title</h3>
 						<div class="social">
@@ -154,23 +174,45 @@
 		</section>
 
 		<section id="contact">
-			<h1 class="contact-me">Contact Me</h1>
-
-			<div class="container">
-				<div class="contact-form" id="form">
-					<div class="contact-title">
-						<h2>Send Me A Message!</h2>
+			<h1 class="contact-title">Contact</h1>
+			<div class="wrapper">
+				<h2>Send Me A Message</h2>
+				<div id="error-message"></div>
+				
+		
+				<form id="form" onsubmit="return validation()">
+					<div class="input-field">
+						<input type="text" placeholder="Name" id="name">
 					</div>
-					<div class="inputs">
-						<input type="text" placeholder="First Name" />
-						<input type="text" placeholder="Last Name" />
-						<input type="Email" placeholder="Email" />
-						<textarea type="text" placeholder="Message" id="message"></textarea>
-						<button class="btn">Submit</button>
+					<div class="input-field">
+						<input type="text" placeholder="Subject" id="subject">
 					</div>
-				</div>
-				<!-- <div class="info"></div> -->
+					<div class="input-field">
+						<input type="text" placeholder="Phone" id="phone">
+					</div>
+					<div class="input-field">
+						<input type="email" placeholder="Email" id="email">
+					</div>
+					<div class="input-field">
+						<textarea id="message" placeholder="Message"></textarea>
+					</div>
+					<div class="btn">
+						<button type="submit">Submit</button>
+					</div>
+				</form>
+				
 			</div>
+
+			<div class="backtotop">
+				<a href="#home" class="totop">Back To Top</a>
+			</div>
+		</section>
+
+		
+		
+		
+		<section id="footer">
+			
 		</section>
 		<script src="https://kit.fontawesome.com/3fbf159bdb.js"></script>
 		<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
