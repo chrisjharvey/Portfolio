@@ -52,13 +52,54 @@ window.addEventListener('DOMContentLoaded', () => {
 	};
 
 	navToSolid();
+
+	//Detect request animation frame
+
+	const animateOnScroll = () => {
+		const scroll = window.requestAnimationFrame || function(callback) { window.setTimeout(callback, 1000/6)};
+
+		const elementsToShow = document.querySelectorAll('.show-on-scroll');
+
+		const loop = () => {
+			elementsToShow.forEach(function (element){
+				if (isElementInViewport(element)) {
+					element.classList.add('is-visible');
+				} else {
+					element.classList.remove('is-visible');
+				}
+			});
+			scroll(loop)
+		}
+		loop();
+	}
+
+	animateOnScroll();
+
+	// Helper function from: http://stackoverflow.com/a/7557433/274826
+function isElementInViewport(el) {
+    // special bonus for those using jQuery
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+      el = el[0];
+    }
+    var rect = el.getBoundingClientRect();
+    return (
+      (rect.top <= 0
+        && rect.bottom >= 0)
+      ||
+      (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+      ||
+      (rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+    );
+  }
 	// skill bars
 
 	const skillBars = () => {
 		window.addEventListener('scroll', () => {
 			if (window.pageYOffset > 1300) {
 				let progressBars = document.querySelectorAll('.progress-bar');
-				let values = ['90%', '90%', '70%', '20%', '30%'];
+				let values = ['90%', '90%', '60%', '30%', '30%'];
 
 				progressBars.forEach((progress, index) => {
 					progress.style.width = values[index];

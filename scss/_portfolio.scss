@@ -1,8 +1,9 @@
 // --- Portfolio Section --- //
 #portfolio {
 	width: 100%;
+	
 	padding: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 
 	.gallery {
 		text-align: center;
@@ -10,24 +11,7 @@
 		font-size: 1.8em;
 		color: $primary-color;
 	}
-	// 	.container {
-	// 		display: flex;
-	// 		flex-wrap: wrap;
-	//         justify-content: center;
-	// 	}
-	// 	.box {
-	// 		height: 350px;
-	// 		width: 350px;
-	// 		border: 1px solid;
-	// 		margin: 10px;
-	// 		overflow: hidden;
-	// 	}
-
-	// 	 #img1 {
-	// 		height: 350px;
-	// 		width: 350px;
-	// 		overflow: hidden;
-	// 	}
+	
 	.container {
 		display: flex;
 		flex-wrap: wrap;
@@ -38,10 +22,10 @@
 
 	.content {
 		position: relative;
-		width: 350px;
-		
+		width: 400px;
 		margin: 10px;
 		overflow: hidden;
+		opacity: 0;
 	}
 
 	.content .image-overlay {
@@ -54,8 +38,6 @@
 		bottom: 0;
 		right: 0;
 		opacity: 0;
-		-webkit-transition: all 0.4s ease-in-out 0s;
-		-moz-transition: all 0.4s ease-in-out 0s;
 		transition: all 0.4s ease-in-out 0s;
 	}
 
@@ -65,8 +47,10 @@
 
 	.content-image {
 		width: 100%;
-		height: 250px;
+		height: 300px;
 	}
+
+	
 
 	.content-details {
 		position: absolute;

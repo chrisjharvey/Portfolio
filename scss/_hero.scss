@@ -48,7 +48,7 @@
 	.line {
 		position: relative;
 		top: 20px;
-		width: 24em;
+		width: 25em;
 		margin: 0 auto;
 		border-right: 2px solid rgba(255, 255, 255, 0.75);
 		text-align: center;
@@ -57,7 +57,7 @@
 	}
 
 	.anim-typewriter {
-		animation: typewriter 6s steps(40) 1s 1 normal both,
+		animation: typewriter 6s steps(50) infinite normal both,
 		blinkTextCursor 500ms steps(40) infinite normal;
 	}
 
@@ -68,7 +68,7 @@
 			width: 0;
 		}
 		to {
-			width: 650px;
+			width: 665px;
 		}
 	}
 	
