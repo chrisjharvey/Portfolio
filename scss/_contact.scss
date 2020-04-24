@@ -1,8 +1,8 @@
 // --- Contact Section --- //
 
-#contact{
-    display: flex;
-    align-items: center;
+#contact {
+	display: flex;
+	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	outline: none;
@@ -11,72 +11,70 @@
 
 .contact-title {
 	text-align: center;
-		margin: 50px;
-		font-size: 1.8em;
-		color: $text-color;
+	margin: 50px;
+	font-size: 1.8em;
+	color: $text-color;
 }
 .wrapper {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-	  min-width: 50%;
-	  padding: 20px;
-	  margin-bottom: 30px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+	min-width: 50%;
+	padding: 20px;
+	margin-bottom: 30px;
 }
 
 h2 {
-    text-align: center;
-    margin: 10px 0 20px;
-    color:#48abab;
-  }
-  
-  .wrapper .input-field {
-      margin-bottom: 30px;
-      
-  }
+	text-align: center;
+	margin: 10px 0 20px;
+	color: #48abab;
+}
 
-  .wrapper .input-field input,
-  .wrapper textarea {
-      width: 100%;
-      border: 1px solid #e0e0e0;
-      padding: 10px;
-      border-radius: 5px;
-      outline: none;
-  }
+.wrapper .input-field {
+	margin-bottom: 30px;
+}
 
-  textarea {
-      height: 100px;
-      resize: none;
-  }
+.wrapper .input-field input,
+.wrapper textarea {
+	width: 100%;
+	border: 1px solid #e0e0e0;
+	padding: 10px;
+	border-radius: 5px;
+	outline: none;
+}
 
-  .wrapper .btn button{
-    border: 0px;
-    padding: 15px;
-    text-align: center;
-    width: 100%;
-    background: #48abab;
-    color: #fff;
-    
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-  }
-  
-  #error-message{
-    margin-bottom: 20px; 
-    padding: 0px;
-    text-align: center;
-    font-size: 16px;
-    color: #e74c3c;
-    transition: all 0.5s ease;
-  }
+textarea {
+	height: 100px;
+	resize: none;
+}
 
-	 	
+.wrapper .btn button {
+	border: 0px;
+	padding: 15px;
+	text-align: center;
+	width: 100%;
+	background: #48abab;
+	color: #fff;
 
-	
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+}
 
+.wrapper .btn button:hover {
+	background-color: $secondary-color;
+}
 
-.backtotop{
+#error-message {
+	margin-bottom: 20px;
+	padding: 0px;
+	text-align: center;
+	font-size: 16px;
+	color: #e74c3c;
+	transition: all 0.5s ease;
+}
+
+.backtotop {
 	margin: 0 auto;
 	text-align: center;
 	text-decoration: none;
@@ -90,8 +88,10 @@ h2 {
 		margin-bottom: 20px;
 		color: #fff;
 	}
+	.backtotop:hover {
+		background-color: rgb(106, 106, 106);
+	}
 }
-
 
 #footer {
 	margin-top: 0px;

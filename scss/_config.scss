@@ -1,10 +1,9 @@
 $primary-color: #48abab;
-// $secondary-color: ;
 $secondary-color: #51a3a3;
 $tertiary-color: #fff;
 $img-overlay: rgba(0, 0, 0, 0.5);
 $text-color: #333;
-$bg-color: #EEEE;
+$bg-color: #eeee;
 
 * {
 	margin: 0;
@@ -14,27 +13,27 @@ $bg-color: #EEEE;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 @mixin media-sm {
-  @media screen and (max-width: 500px) {
-    @content;
-  }
+	@media screen and (max-width: 500px) {
+		@content;
+	}
 }
 
 @mixin media-md {
-    @media screen and (min-width: 768px) {
-      @content;
-    }
-  }
-  @mixin media-lg {
-    @media screen and (min-width: 1024px) {
-      @content;
-    }
-  }
-  @mixin media-xl {
-    @media screen and (min-width: 1600px) {
-      @content;
-    }
-  }
+	@media screen and (min-width: 768px) {
+		@content;
+	}
+}
+@mixin media-lg {
+	@media screen and (min-width: 1024px) {
+		@content;
+	}
+}
+@mixin media-xl {
+	@media screen and (min-width: 1600px) {
+		@content;
+	}
+}

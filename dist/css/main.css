@@ -405,9 +405,13 @@ nav {
   text-decoration: none;
 }
 
+#about .btn1:hover {
+  background-color: #51a3a3;
+}
+
 #my-skills {
   width: 100%;
-  background-color: #EEEE;
+  background-color: #eeee;
 }
 
 #my-skills .skills-inner {
@@ -577,7 +581,7 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   outline: none;
-  background-color: #EEEE;
+  background-color: #eeee;
 }
 
 .contact-title {
@@ -633,6 +637,10 @@ textarea {
   font-size: 1em;
 }
 
+.wrapper .btn button:hover {
+  background-color: #51a3a3;
+}
+
 #error-message {
   margin-bottom: 20px;
   padding: 0px;
@@ -658,6 +666,10 @@ textarea {
   text-decoration: none;
   margin-bottom: 20px;
   color: #fff;
+}
+
+.backtotop .backtotop:hover {
+  background-color: #6a6a6a;
 }
 
 #footer {

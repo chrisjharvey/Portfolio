@@ -1,40 +1,37 @@
 #about {
-    
-    .img #chris.is-visible {
-        opacity: 1;
-        transition: 3s ease-in; 
-       
-    }
+	.img #chris.is-visible {
+		opacity: 1;
+		transition: 3s ease-in;
+	}
 
-    .about-inner.is-visible {
-        opacity: 1;
-        transition: 2s ease-in;
-        animation: slide-in 4s forwards;
-        transform: translateX(100%);
-    }
+	.about-inner.is-visible {
+		opacity: 1;
+		transition: 2s ease-in;
+		animation: slide-in 4s forwards;
+		transform: translateX(100%);
+	}
 
-    @keyframes slide-in {
-        100% {
-            transform: translateX(0%);
-        }
-    }
-
+	@keyframes slide-in {
+		100% {
+			transform: translateX(0%);
+		}
+	}
 }
 
 #portfolio {
-    .content.is-visible {
-    opacity: 1;
-    transition: 2s ease-in;
-    animation: slide-in 3s forwards;
-    transform: translateX(-100%);
-    }
+	.content.is-visible {
+		opacity: 1;
+		transition: 2s ease-in;
+		animation: slide-in 3s forwards;
+		transform: translateX(-100%);
+	}
 }
 
 #contact {
-    .wrapper.is-visible {
-        opacity: 1;
-        transition: 2s ease-in;
-        animation: slide-in 3s forwards;
-        transform: translateX(100%);
-        }
+	.wrapper.is-visible {
+		opacity: 1;
+		transition: 2s ease-in;
+		animation: slide-in 3s forwards;
+		transform: translateX(100%);
+	}
 }

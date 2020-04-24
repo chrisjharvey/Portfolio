@@ -4,7 +4,6 @@
 	height: 120vh;
 	width: 100vw;
 	margin-top: -100px;
-	
 
 	.hero-content {
 		display: flex;
@@ -19,16 +18,13 @@
 		color: $tertiary-color;
 		/* Overlay */
 		background: $img-overlay;
-		
-		
 	}
 
 	#primary {
 		color: $primary-color;
-		
 	}
 
-	.btn-arrow{
+	.btn-arrow {
 		padding: 20px;
 		margin-top: 20px;
 		border: none;
@@ -41,7 +37,6 @@
 	}
 
 	.btn-arrow:hover {
-		
 		background: $secondary-color;
 	}
 
@@ -53,16 +48,14 @@
 		border-right: 2px solid rgba(255, 255, 255, 0.75);
 		text-align: center;
 		white-space: nowrap;
-		overflow: hidden;transform: translateY(-50%);
+		overflow: hidden;
+		transform: translateY(-50%);
 	}
 
 	.anim-typewriter {
-		animation: typewriter 6s steps(50) infinite normal both,
-		blinkTextCursor 500ms steps(40) infinite normal;
+		animation: typewriter 6s steps(50) infinite normal both, blinkTextCursor 500ms steps(40) infinite normal;
 	}
 
-
-	
 	@keyframes typewriter {
 		from {
 			width: 0;
@@ -71,7 +64,7 @@
 			width: 665px;
 		}
 	}
-	
+
 	@keyframes blinkTextCursor {
 		from {
 			border-right-color: rgba(255, 255, 255, 0.75);
@@ -85,7 +78,6 @@
 		position: absolute;
 		top: 90vh;
 		left: 20px;
-
 	}
 	.social a {
 		color: $tertiary-color;

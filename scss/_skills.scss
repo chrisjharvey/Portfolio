@@ -1,4 +1,3 @@
-
 // --- Skills Section --- //
 #my-skills {
 	width: 100%;
@@ -22,20 +21,17 @@
 		margin: 20px 0px;
 		height: 40px;
 		padding: 2px 2px;
-		
-
 	}
-	
+
 	.progress-bar {
 		height: 100%;
-		width: 0%; 
+		width: 0%;
 		background: #48abab;
 		border-radius: 10px;
 		transition: all 1.5s;
 		box-shadow: 8px 9px 10px rgba(0, 0, 0, 0.3);
-		
 	}
-	
+
 	.progress-bar span {
 		// position: relative;
 		// top: 10%;
@@ -46,40 +42,10 @@
 		color: $tertiary-color;
 	}
 
-	 .skills {
+	.skills {
 		text-align: center;
 		margin-top: 50px;
 		font-size: 1.8em;
 		color: $text-color;
 	}
-
-	// .container {
-	// 	width: 100%;
-	// 	background-color: $bg-color;
-	// 	margin: 30px;
-	// }
-
-	// .skill {
-	// 	text-align: right;
-	// 	padding-top: 10px;
-	// 	padding-bottom: 10px;
-	// 	color: $text-color;
-	// }
-
-	// .html {
-	// 	width: 90%;
-	// 	background-color: $primary-color;
-	// } /* Green */
-	// .css {
-	// 	width: 80%;
-	// 	background-color: $primary-color;
-	// } /* Blue */
-	// .js {
-	// 	width: 65%;
-	// 	background-color: $primary-color;
-	// } /* Red */
-	// .php {
-	// 	width: 60%;
-	// 	background-color: $primary-color;
-	// } /* Dark Grey */
 }
